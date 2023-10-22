@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 import { WhiteArrow } from '../../components/WhiteArrow/index.js';
 import { RoundedCard } from '../../components/RoundedCard/index.js';
 import { ProfileInfo } from '../../components/ProfileInfo/index.js';
+import { NavBottom } from '../../components/NavBottom/index.js';
 import styles from './styles';
 
 export default function DashboardPage() {
@@ -91,6 +92,7 @@ export default function DashboardPage() {
           coopImage={require('../../../assets/ProfilePictureGiselle.png')} 
         />
       </View>
+    <NavBottom style={[{position: 'fixed'}, {bottom: 0}]} />
     </View>
   );
 }

@@ -49,7 +49,7 @@ export function NavBar(){
           />
         </Link>
       </View>
-      <IconButton valor={'Login'} paddingBlock={8} paddingInline={18} onPress={handleLoginPress}/>
+      <IconButton name={'person'} valor={'Login'} paddingBlock={8} paddingInline={18} onPress={handleLoginPress}/>
     </View>
   )
 }

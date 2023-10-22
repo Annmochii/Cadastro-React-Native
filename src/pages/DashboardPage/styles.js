@@ -5,54 +5,57 @@ import { Icon } from 'react-native-elements';
 
 const styles = StyleSheet.create({
   FullProject: {
-    gap: 98,
+    gap: 16,
     flex: 1,
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#F0F0F0',
     alignItems: 'center',
   },
-  Nav: {
-    marginTop: 0,
+  OrangeBack:{
+    height: 218,
+    width: '100%',
+    gap: 16,
+    paddingTop: 14,
+    borderBottomEndRadius: 32,
+    borderBottomStartRadius: 32,
+    backgroundColor: "#F86041"
+  },
+  Profile: {
+    gap: 16,
+    paddingInline: '1rem',
+  },
+  Person: {
+    flexDirection: 'row',
+    gap: 12,
+    alignItems: 'end',
+  },
+  ProfilePicture: {
+    height: 80,
+    width: 80,
   },
   MainContainer:{
     width: '100%',
-    gap: 112,
+    gap: 8,
     paddingInline: '0.5rem',
   },
   Container: {
     gap: '16px',
-    width: '100%',  },
+    width: '100%',  
+  },
   Hero: {
     gap: '12px',
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 8,
   },
-  Title: {
+  Name: {
     fontFamily: 'PoppinsBold',
-    fontSize: '24px',
-    color: '#26262B',
-  },
-  Link: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginBottom: '8px',
-    fontSize: '14px',
+    fontSize: '32px',
+    color: '#F7F7F7',
   },
   Text: {
     fontFamily: 'MerriweatherLight',
     color: '#26262B',
   },
-  Hiperlink: {
-    fontFamily: 'MerriweatherRegular',
-    color: '#F86041',
-    textDecorationLine: 'underline',
-  },
-  Forgot: {
-    flexDirection: 'row',
-    justifyContent: 'end',
-  }
 });
 
 export default styles;

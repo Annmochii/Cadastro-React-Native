@@ -10,8 +10,9 @@ export function IconButton(props){
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: '#F86041',
-            borderRadius: '30px',
-            border: 'none',
+            borderColor: '#F7F7F7',
+            borderWidth: props.border??'0px',
+            borderRadius: '30px', 
             paddingBlock: props.paddingBlock??"12px",
             paddingInline: props.paddingInline??"32px",
             height: 36,
@@ -26,7 +27,7 @@ export function IconButton(props){
     return (
         <TouchableOpacity style={styles.DefaultButton} onPress={props.onPress}>
             <Icon 
-                name={'person' }
+                name={props.name}
                 color={'#F7F7F7'}
                 size={17}
             />

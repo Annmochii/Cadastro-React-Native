@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { AuthProvider } from './context/AuthContext.js';
 import Routes from "./routes/index.js";
 
 const Stack = createNativeStackNavigator();
@@ -9,7 +10,9 @@ export default function App() {
 
   return (
     <NavigationContainer>
-        <Routes />
+        <AuthProvider>
+          <Routes />
+        </AuthProvider>
     </NavigationContainer>
 
   );

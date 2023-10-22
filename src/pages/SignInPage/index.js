@@ -11,8 +11,12 @@ import { InputKey } from '../../components/InputKey';
 import { Checkbox } from '../../components/Checkbox';
 import { NavBar } from '../../components/NavBar/index';
 import styles from './styles'
+import { useContext } from 'react';
+import AuthContext from '../../context/AuthContext';
 
 export default function SignInPage() {
+
+  const { signIn } = useContext ( AuthContext );
 
   const [email, setEmail, password, setPassword] = React.useState("");
 
@@ -52,7 +56,7 @@ export default function SignInPage() {
             <Text style={styles.Hiperlink}><Link to={{ screen: 'ForgotPassword' }}>Esqueci minha senha</Link></Text> 
           </View>
         </View>
-        <DefaultButton valor='Próximo'></DefaultButton>
+        <DefaultButton valor='Próximo' onPress={() => signIn()}></DefaultButton>
         <StatusBar style="auto" />
       </View>
     </View>

@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function ProfileInfo(props){
+export function ProfileInfo(props){
     const styles = StyleSheet.create({
         RoundedCard:{
             width: '100%',
-            height: props.height??'120px',
+            height: 104,
             borderRadius: 28,
             backgroundColor: '#F7F7F7',
             flexDirection: 'row',

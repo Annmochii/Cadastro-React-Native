@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     paddingTop: 14,
     borderBottomEndRadius: 32,
     borderBottomStartRadius: 32,
-    backgroundColor: "#F86041"
+    backgroundColor: "#F86041",
+    marginBottom: 48,
   },
   Profile: {
     gap: 16,
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
   MainContainer:{
     width: '100%',
     gap: 8,
-    paddingInline: '0.5rem',
+    paddingInline: '1rem',
   },
   Container: {
     gap: '16px',
